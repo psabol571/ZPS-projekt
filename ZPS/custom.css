@@ -1,0 +1,29 @@
+body{
+    background-color: #2a2c2e;
+    color: white;
+    font-size: large;
+}
+#eye{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gap{
+    display: block;
+    height: 35px;
+}
+.grey{
+    background-color: #21201e;
+}
+@media screen and (max-width: 1000px) {
+    #eye{
+        width: 700px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    #eye{
+        width: 400px;
+        height: auto;
+    }
+}
