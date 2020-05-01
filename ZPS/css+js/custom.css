@@ -27,3 +27,8 @@ body{
         height: auto;
     }
 }
+
+video{
+    width: inherit;
+    margin-left: 40px;
+}
