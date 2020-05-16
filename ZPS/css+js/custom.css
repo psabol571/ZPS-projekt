@@ -15,9 +15,40 @@ body{
 .grey{
     background-color: #21201e;
 }
+.col50{
+    float: left;
+    width: 50%;
+}
+
+.col50 p{
+    text-align: justify;
+    margin: 20px;
+}
+.im img{
+    display: block; 
+    width: 80em;
+    margin: auto;
+}
+.col20{
+    float: left;
+    width: 20%;
+}
 @media screen and (max-width: 1000px) {
     #eye{
         width: 700px;
+        height: auto;
+    }
+    img{
+        width: 25em;
+    }
+    .im img{
+        width: 35em;
+    }
+    .col20{
+        width: 100%;
+    }
+    .col20 img{
+        width: auto;
         height: auto;
     }
 }
@@ -26,6 +57,16 @@ body{
         width: 400px;
         height: auto;
     }
+    .col50{
+        width: 100%;
+    }
+    img{
+        width: 25em;
+    }
+    .im img{
+        width: 20em;
+    }
+    
 }
 
 video{

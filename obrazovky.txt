@@ -1,0 +1,4 @@
+Obrazovky (screen based):
+
+Eye trackery založené na obrazovke sa väčšinou používajú na výskum, kde účastník interaguje alebo je vystavený stimulom na obrazovke. Tieto diaľkové sledovače očí ponúkajú široké vzorkovacie frekvencie a tie s vysokou frekvenciou môžu poskytovať veľké množstvo údajov a veľmi vysokú úroveň detailov týkajúcich sa pohybu oka. Pri štúdiu ľudí s určitými zdravotnými problémami a dojčiat, ktoré nedokážu kontrolovať svoje pohyby, sa bežne používajú očné sledovače očí s veľkou toleranciou pohybu hlavy.
+Dajú sa pripevniť na notebook alebo monitor, buď samostatne alebo ako zostava.

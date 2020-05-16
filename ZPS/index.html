@@ -19,6 +19,7 @@
         <a href="#link4" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-text-grey w3-hover-text-white ">Výhody</a>
         <a href="#link5" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-text-grey w3-hover-text-white ">Video</a>
         <a href="#link6" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-text-grey w3-hover-text-white ">Náš tím</a>
+        <a href="#link7" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-text-grey w3-hover-text-white ">Zdroje</a>
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hover-none w3-text-grey w3-hover-text-white w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
         
         <div id="hiddenNav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
@@ -28,6 +29,7 @@
             <a href="#link4" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-center">Výhody</a>
             <a href="#link5" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-center">Video</a>
             <a href="#link6" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-center">Náš tím</a>
+            <a href="#link6" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-center">Zdroje</a>
         </div>
     </nav>
 
@@ -65,19 +67,36 @@
         <section class="w3-container" id="link2">
             <div class="gap"></div>
             <div class="w3-cell-row w3-container grey">
-                <div class="w3-container w3-cell w3-cell-middle">
-                    <h1><b>Ako to funguje?</b></h1>
-                    <p>
-                        Eye tracker je prístroj, ktorý využíva na snímanie ľudského oka skoro až infra-červené svetle a HD kamery na 
-                        vysielanie svetla do očí, a zaznamenáva smer alebo uhol, ktorým sa toto svetlo odráža od rohovky. Následne sa 
-                        používajú pomerne komplikované algoritmy na vypočítanie polohy oka, pomocou ktorých sa da určiť, kam je náš pohľad 
-                        upriamený. Táto poloha oka sa zaznamenáva niekoľko krát za sekundu, čo umožňuje veľmi delikátne, skoro až nepatrné 
-                        pohyby oka. To, ako rýchlo dokáže eye tracker zaznamenávať tieto obrazy sa udáva vo frekvencií. Pomocou rôznych 
-                        softwarov, je možno vykresliť veľmi presnú mapu pohľadu na rôzne elementy v nejakej scéne.
+                <div style="width: 70%; margin: auto;">
+                    <h1 style="text-align: center;"><b>Ako to funguje?</b></h1>
+                    <p style="text-align: justify;">
+                        Eye tracker je prístroj, ktorý využíva na snímanie ľudského oka  infra-červené svetlo a HD kamery ,ktoré vysielajú svetlo do očí,
+ a zaznamenávajú smer alebo uhol, ktorým sa toto svetlo odráža od rohovky. Následne sa používajú pomerne komplikované algoritmy na vypočítanie polohy oka,
+ pomocou ktorých sa dá určiť, kam je náš pohľad upriamený. Táto poloha oka sa zaznamenáva niekoľko krát za sekundu, čo umožňuje veľmi delikátne zaznamenávanie,
+ aj nepatrných pohybov oka. To, ako rýchlo dokáže eye tracker zaznamenávať tieto obrazy sa udáva vo frekvenciách.
+Softvér generuje údaje o týchto akciách vo forme tepelných máp a sakadických dráh:
                     </p>
                 </div>
-                <div class="w3-cell">
-                    <img src="./pictures+video/3oci.png" class="w3-round w3-margin" alt="image4">
+
+                <div class="col50">
+                    <h2 style="text-align: center;"><b>Tepelné mapy</b></h2>
+                    <p style="text-align: justify; margin: 20px;">
+                        Tepelné mapy predstavujú miesto,
+ ktoré ukazuje ,kde  návštevník sústredil svoj pohľad a ako dlho sa díval na daný bod. 
+Vo všeobecnosti je to farebná škála označujúca trvanie pozerania na daný aspekt (napr. na stránke) pohybujúci sa z modrej na červenú . 
+Červená škvrna nad určitou oblasťou stránky môže teda naznačovať, 
+že účastník alebo skupina účastníkov sa na túto časť stránky zameriaval dlhšiu dobu.
+                    </p>
+                    <img src="./pictures+video/atf1.png" class="w3-round w3-margin" style="padding-left: 80px;" alt="atf1">
+                </div>
+                <div class="col50">
+                    <h2 style="text-align: center;"><b>Sakadické dráhy</b></h2>
+                    <p style="text-align: justify; margin: 20px;">
+                        Sakadické pohyby predstavujú rýchle pohyby nášho oka.Softvér zachytáva tieto pohyby a výtvára z nich dráhy ,ktoré spajajú miesta na ktoré sme sústredili pozornosť.
+Prezentované  v softvéry su tieto veci tak, že miesta záujmu sú červené bodky odčislované od najmenšieho, kde najmenšie číslo predstavuje najfrekventovanejšie miesto našeho záujmu 
+a červené čiary reprezentujú náš pohyb oka medzi danými bodmi.
+                    </p>
+                    <img src="./pictures+video/atf2.png" class="w3-round w3-margin" style="padding-left: 80px;" alt="atf2">
                 </div>
             </div>
             
@@ -85,37 +104,64 @@
 
         <section class="w3-container" id="link3">
             <div class="gap"></div>
-            <h1 style="text-align: center; position: relative; right: 25px;"><b>Typy</b></h1>
-            <div class="w3-cell-row w3-container">
-                <div class="w3-container w3-cell">
-                    <img src="./pictures+video/1.jpg" width="600px" class="w3-round w3-margin" style="position: relative; top: 30px;" alt="image3">
+            
+            <div style="width: 90%; margin: auto;"> 
+                <h1 style="text-align: center;"><b>Typy</b></h1>       
+                <p style="text-align: justify;">
+                    Princíp tejto technológie je pri každom zariadení rovnaký, no aj napriek tomu existujú rôzne 
+                    kategórie, v závislostí od požiadaviek používateľa. 4 hlavné kategórie sú:
+                </p>
+            </div>
+            <div>
+                <div class="col50">
+                    <h4><b>Obrazovky</b></h2>
+                        <p>Eye trackery založené na obrazovke sa väčšinou používajú na výskum, kde účastník interaguje alebo 
+                            je vystavený stimulom na obrazovke. Tieto diaľkové sledovače očí ponúkajú široké vzorkovacie 
+                            frekvencie a tie s vysokou frekvenciou môžu poskytovať veľké množstvo údajov a veľmi vysokú úroveň 
+                            detailov týkajúcich sa pohybu oka. Pri štúdiu ľudí s určitými zdravotnými problémami a dojčiat, 
+                            ktoré nedokážu kontrolovať svoje pohyby, sa bežne používajú eye trackery s veľkou toleranciou pohybu hlavy.
+                            Dajú sa pripevniť na notebook alebo monitor, buď samostatne alebo ako zostava.</p>
                 </div>
-                <div class="w3-container w3-cell-top">     
+
+                <div class="col50">
+                    <h4><b>Virtuálna realita</b></h4>
                     <p>
-                        Princíp tejto technológie je pri každom zariadení rovnaký, no aj napriek tomu existujú rôzne 
-                        kategórie, v závislostí od požiadaviek používateľa. 3 hlavné kategórie sú:
-                    </p>
-                    <ul>
-                        <li>
-                            <h4><b>Obrazovky:</b></h2>
-                            <p>Zariadenia, ktoré sa dajú pripevniť na notebook alebo monitor, buď samostatne alebo ako zostava. 
-                                Sú pomerne špecializované a slúžia najme na účel rôznych výskumov alebo štúdií. 
-                                Majú vysokú frekvenciu a tým pádom aj citlivosť a presnosť pozorovania.</p>
-                        </li>
-                        <li>
-                            <h4><b>Nositeľné:</b></h2>
-                            <p>Čoraz viac populárne. Sú to zariadenia, ktoré môže užívateľ pohodlne nosiť na hlave. 
-                                Napríklad niektoré VR headsety alebo špecializované okuliare.</p>
-                        </li>
-                        <li>
-                            <h4><b>Webkamery:</b></h2>
-                            <p>Zariadenia ktoré poznáme všetci. Bežne nemajú ani senzor ani špecializovane kamery. 
-                                Namiesto toho sa používajú algoritmy, ktoré vypočítajú na základe obrazu poskytnutého webkamerou,
-                                polohu hlavy a očí a potom z toho smeru je generovaný smer pohľadu.</p>
-                        </li>
-                    </ul>
+                        Náhlavné súpravy VR s integrovaným sledovaním očí umožňujú skúmať situačné interakcie vo viacerých prostrediach 
+                        bez potreby prítomnosti fyzického prostredia. Je to užitočné pre výcvik v oblasti zručností a bezpečnosti na miestach
+                        , ktoré by inak boli príliš riskantné, alebo by bolo príliš ťažké alebo nákladné ich zriadiť. Táto metóda sa tiež používa na testovanie vecí, ako je návrh budovy alebo obchodu, bez výdavkov a času 
+                        potrebného na fyzické vytvorenie miesta. 
+                        Môže to byť veľmi nákladovo efektívny spôsob, ako účinne otestovať veľa scenárov u viacerých účastníkov.
+                    </p> 
                 </div>
             </div>
+
+            <div class="im">
+                <img src="./pictures+video/1.jpg" class="w3-round w3-margin" alt="image3">
+            </div>
+
+            <div>
+                <div class="col50">
+                    <h4><b>Nositeľné</b></h2>
+                        <p>Eye tracking okuliare sú ideálne na štúdium správania v skutočných situáciách, 
+                            ako je napríklad prehliadanie uličiek supermarketu, športovanie, navigácia v metre, 
+                            konzumácia médií v domácnosti, interakcia ľudí alebo práca v továrni atď. Umožňujú prirodzený pohyb
+                            a sú nenápadné, čo znamená, že užívateľ môže robiť to, čo by za normálnych okolností urobil. 
+                            Obsahujú tiež vstavanú scénovú kameru a mikrofón na zaznamenávanie prostredia.</p>
+                </div>
+                    
+                <div class="col50">
+                    <h4><b>Webkamery</b></h2>
+                        <p>Webcam eye tracking využíva vstavanú alebo externú webovú kameru pripojenú k notebooku alebo 
+                            monitoru na zhromažďovanie informácií o tom, kde sa daná osoba pozerá. Táto metóda nepoužíva 
+                            infračervené svetelné lúče ani špecializované kamery, ale spolieha sa na obrázok vygenerovaný 
+                            z webovej kamery. Algoritmus sa potom používa na výpočet polohy hlavy a očí, a z tohto dôvodu 
+                            smer očí koreluje s obrazom na obrazovke. Aj keď hĺbka a presnosť informácií, ktoré môžete získať 
+                            pomocou tejto metódy, je do istej miery obmedzená, sledovanie očí webovej kamery umožňuje rozsiahle 
+                            štúdie a rýchly obrat, ktorý je ideálny pre kvantitatívny výskum. Táto metóda sa bežne používa na 
+                            začiatku procesu navrhovania, ako je testovanie A / B webových stránok alebo produktov.</p>
+                </div>
+            </div>
+                      
         </section>
 
         <section class="w3-container" id="link4">
@@ -148,34 +194,56 @@
         <section class="w3-container" id="link6">
             <div class="gap"></div>
             <h1 style="text-align: center;"><b>Náš tím</b></h1>
-            <div class="w3-container w3-cell-row grey">
-                <div class="w3-cell w3-card-4">
+            <div class="w3-container grey">
+                <div class="col20 w3-card-4">
                     <img src="./pictures+video/Mato.png" width="210px" height="240px" style="margin: 35px;" alt="Martin">
                     <p style="text-align: center;">Martin Saraka</p>
+                    <p style="text-align: center;">Scenárista videa</p>
                 </div>
                 
-                <div class="w3-cell w3-card-4">
+                <div class="col20 w3-card-4">
                     <img src="./pictures+video/Laci.png" width="210px" height="240px" style="margin: 35px;" alt="Laci">
                     <p style="text-align: center;">Ladislav Sokol</p>
+                    <p style="text-align: center;">Strihač videa</p>
                 </div>
                 
-                <div class="w3-cell w3-card-4">
-                    <img src="./pictures+video/Dano.png" width="210px" height="240px" style="margin: 35px;" alt="Dano">
+                <div class="col20 w3-card-4">
+                    <img src="./pictures+video/dano.jpg" width="210px" height="240px" style="margin: 35px;" alt="Dano">
                     <p style="text-align: center;">Daniel Riško</p>
+                    <p style="text-align: center;">Administrátor</p>
                 </div>
                 
-                <div class="w3-cell w3-card-4">
+                <div class="col20 w3-card-4">
                     <img src="./pictures+video/Domino.png" width="210px" height="240px" style="margin: 35px;" alt="Domino">
                     <p style="text-align: center;">Dominik Solnoki</p>
+                    <p style="text-align: center;">Textár</p>
                 </div>
                 
-                <div class="w3-cell w3-card-4">
+                <div class="col20 w3-card-4">
                     <img src="./pictures+video/Ja.png" width="210px" height="240px" style="margin: 35px;" alt="Pato">
                     <p style="text-align: center;">Patrik Sabol</p>
+                    <p style="text-align: center;">Web master</p>
                 </div>
-                
+            </div>            
+        </section>
+
+        <section class="w3-container" id="link7">
+            <div class="gap"></div>
+            <div style="width: 50%; margin: auto;">
+                <h1 style="text-align: center;"><b>Zdroje</b></h1>
+                <ul>
+                    <li>
+                        <a href="https://www.usability.gov/how-to-and-tools/methods/eye-tracking.html">https://www.usability.gov/how-to-and-tools/methods/eye-tracking.html</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tobiipro.com/blog/what-is-eye-tracking/">https://www.tobiipro.com/blog/what-is-eye-tracking/</a>
+                    </li>
+                    <li>
+                        <a href="https://imotions.com/blog/eye-tracking-work/">https://imotions.com/blog/eye-tracking-work/</a>
+                    </li>
+                </ul>
+
             </div>
-            
         </section>
 
     </main>
