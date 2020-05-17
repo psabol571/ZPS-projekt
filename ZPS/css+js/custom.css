@@ -23,7 +23,7 @@ body{
     width: 50%;
 }
 
-.col50 p{
+.col50 p , .col72 p{
     text-align: justify;
     margin: 20px;
 }
@@ -31,6 +31,14 @@ body{
     display: block; 
     width: 80em;
     margin: auto;
+}
+.col72{
+    float: left;
+    width: 72%;
+}
+.col28{
+    float: left;
+    width: 28%;
 }
 .col20{
     float: left;
@@ -47,7 +55,7 @@ body{
     .im img{
         width: 35em;
     }
-    .col20{
+    .col20, .col72, .col28{
         width: 100%;
     }
     .col20 img{
